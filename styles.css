@@ -183,7 +183,6 @@ footer {
     align-items: center;
     gap: 20px;
     font-size: 30px;
-    font-style: bold;
 }
 
 .profile-img {
@@ -194,9 +193,7 @@ footer {
 }
 /* About-container tyyli */
 .about-container {
-    max-width: auto;
     margin: auto;
-    padding: none;
     background-color: #0A100D;
     color: #CC2936;
     text-align: center;
@@ -204,7 +201,6 @@ footer {
 }
 /* Kokemus-sivu */
 .experience {
-    max-width: auto;
     margin: 50px auto;
     padding: 5px;
     background-color: #0A100D;
@@ -214,7 +210,6 @@ footer {
 }
 .experience p {
     max-width:fit-content;
-    padding: auto;
     margin: auto;
     font-size: 30px;
     color: #ECFEE8;
@@ -222,7 +217,6 @@ footer {
 }
 .about-text {
     color:#ECFEE8;
-    padding: auto;
     margin: auto;
 }
 
