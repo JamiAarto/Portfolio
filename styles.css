@@ -1,0 +1,250 @@
+/* Yleiset tyylit */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0A100D;
+    color: #ECFEE8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Varmistaa, että body kattaa koko näytön korkeuden */
+}
+
+/* Pääsivun sisältö */
+main {
+    flex-grow: 1; /* Täyttää jäljelle jäävän tilan */
+}
+
+/* Alapalkki */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #080C09;
+    color: #ECFEE8;
+    margin-top: 50px;
+}
+
+
+/* Linkit */
+a {
+    color: #CC2936;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ECFEE8;
+}
+
+/* Ylävalikko */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0A100D;
+    border-bottom: 2px solid #CC2936;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ECFEE8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+
+/* Etusivun hero-osa */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #CC2936;
+}
+
+/* Napit */
+.btn {
+    display: inline-block;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #CC2936;
+    color: #ECFEE8;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #ECFEE8;
+    color: #CC2936;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* Alapalkki */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #080C09;
+    color: #ECFEE8;
+    margin-top: 50px;
+}
+
+/* Blogisivun tyylit */
+.blog-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #0A100D;
+    color: #ECFEE8;
+}
+
+.blog-container h1 {
+    text-align: center;
+    color: #CC2936;
+}
+
+.blog-post {
+    background-color: #080C09;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #CC2936;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 15px rgba(204, 41, 54, 0.5);
+}
+
+.blog-post h2 a {
+    color: #ECFEE8;
+}
+
+.blog-post .date {
+    font-size: 14px;
+    color: #CC2936;
+}
+
+/* Projektisivun tyylit */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #1A1A1A;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(204, 41, 54, 0.5);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #CC2936;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* About-sivu, profiilikuvan tyyli */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    font-style: bold;
+}
+
+.profile-img {
+    width: 30%; /* Kuva vie nyt 40% leveydestä */
+    height: auto; /* Kuvan korkeus mukautuu automaattisesti */
+    border-radius: 50%;
+    border: 3px solid #CC2936;
+}
+/* About-container tyyli */
+.about-container {
+    max-width: auto;
+    margin: auto;
+    padding: none;
+    background-color: #0A100D;
+    color: #CC2936;
+    text-align: center;
+    font-size: 40px;
+}
+/* Kokemus-sivu */
+.experience {
+    max-width: auto;
+    margin: 50px auto;
+    padding: 5px;
+    background-color: #0A100D;
+    color: #CC2936;
+    font-size: 30px;
+    text-align: center;
+}
+.experience p {
+    max-width:fit-content;
+    padding: auto;
+    margin: auto;
+    font-size: 30px;
+    color: #ECFEE8;
+    text-align: center;
+}
+.about-text {
+    color:#ECFEE8;
+    padding: auto;
+    margin: auto;
+}
+
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
