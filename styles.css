@@ -242,3 +242,73 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* Ylävalikko */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0A100D;
+    border-bottom: 2px solid #CC2936;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ECFEE8;
+}
+
+/* Navigointi */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #CC2936;
+    font-weight: bold;
+}
+/* Hampurilaisvalikon painike */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #ECFEE8;
+    cursor: pointer;
+}
+/* Media query mobiililaitteille */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Piilotetaan valikko oletuksena */
+        flex-direction: column;
+        width: 100%;
+        background-color: #0A100D;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Näytetään hampurilaisikoni */
+    }
+
+    /* Kun valikko on aktiivinen */
+    nav ul.active {
+        display: flex;
+    }
+}
